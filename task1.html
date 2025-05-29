@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Day-1 css</title>
+      <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+
+    h2 {
+      text-align: left;
+    }
+
+    .marquee-container {
+      width: 100%;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .marquee {
+      display: flex;
+      animation: scroll-right 20s linear infinite;
+    }
+
+    .marquee img {
+      height: 200px;
+      margin-right: 20px;
+    }
+
+    @keyframes scroll-right {
+      0% {
+        transform: translateX(-50%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
+  </style>
+</head>
+
+<body>
+     <h2>Image in Marquee</h2>
+     <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam deleniti doloremque itaque esse laborum modi illo accusantium iure, tenetur qui molestiae optio non hic. Illum reiciendis ad magni eveniet similique!
+     </p>
+     <div class="marquee-container">
+          <div class="marquee">
+               <img src="./image.jpg" alt="Books Image">
+               <img src="./image.jpg" alt="Books Image">
+               <img src="./image.jpg" alt="Books Image">
+               <img src="./image.jpg" alt="Books Image">
+          </div>
+     </div>
+</body>
+
+</html>
